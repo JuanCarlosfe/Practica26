@@ -127,7 +127,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Porgramacion Orientada A Obejtos Y Eventos"/>
+        <Property name="text" type="java.lang.String" value="Programacion Orientada A Objetos Y Eventos"/>
       </Properties>
     </Component>
   </SubComponents>

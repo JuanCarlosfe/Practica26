@@ -56,7 +56,7 @@ public class frmAutor extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Porgramacion Orientada A Obejtos Y Eventos");
+        jLabel4.setText("Programacion Orientada A Objetos Y Eventos");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
