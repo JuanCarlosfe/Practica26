@@ -42,23 +42,53 @@ public class frmInicio extends javax.swing.JFrame {
 
         jLabel1.setText("jLabel1");
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("FARMACOS");
         setResizable(false);
 
         btnAutor.setFont(new java.awt.Font("Sylfaen", 0, 14)); // NOI18N
         btnAutor.setText("Autor");
+        btnAutor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAutorActionPerformed(evt);
+            }
+        });
 
         btnSalir.setFont(new java.awt.Font("Yu Gothic", 0, 14)); // NOI18N
         btnSalir.setText("Salir");
+        btnSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalirActionPerformed(evt);
+            }
+        });
 
         btnAltas.setText("Altas");
+        btnAltas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAltasActionPerformed(evt);
+            }
+        });
 
         btnBajas.setText("Bajas");
+        btnBajas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBajasActionPerformed(evt);
+            }
+        });
 
         btnConsultas.setText("Consultas");
+        btnConsultas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnConsultasActionPerformed(evt);
+            }
+        });
 
         btnModificaciones.setText("Modificaciones");
+        btnModificaciones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnModificacionesActionPerformed(evt);
+            }
+        });
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Portada.png"))); // NOI18N
         jLabel2.setText("jLabel2");
@@ -109,6 +139,35 @@ public class frmInicio extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_btnSalirActionPerformed
+
+    private void btnAutorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAutorActionPerformed
+       frmAutor frm = new frmAutor();
+       frm.setVisible(true);
+    }//GEN-LAST:event_btnAutorActionPerformed
+
+    private void btnAltasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAltasActionPerformed
+       frmAltas frm = new frmAltas();
+       frm.setVisible(true);
+    }//GEN-LAST:event_btnAltasActionPerformed
+
+    private void btnBajasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBajasActionPerformed
+       frmBajas frm = new frmBajas();
+       frm.setVisible(true);
+    }//GEN-LAST:event_btnBajasActionPerformed
+
+    private void btnConsultasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultasActionPerformed
+       frmConsultas frm = new frmConsultas();
+       frm.setVisible(true);
+    }//GEN-LAST:event_btnConsultasActionPerformed
+
+    private void btnModificacionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificacionesActionPerformed
+        frmModificaciones frm = new frmModificaciones();
+       frm.setVisible(true);
+    }//GEN-LAST:event_btnModificacionesActionPerformed
 
     /**
      * @param args the command line arguments
